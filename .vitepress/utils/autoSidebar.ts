@@ -14,13 +14,14 @@ interface SidebarConfig {
 
 /**
  * Convert filename to readable title
- * Example: "RL_for_LLMs.md" -> "RL for LLMs"
+ * Examples:
+ *   "01_KV_Cache.md" -> "01_KV_Cache"
+ *   "CPU_GPU_Execution.md" -> "CPU_GPU_Execution"
+ * Keeps underscores as-is, only removes .md extension
  */
 function formatTitle(filename: string): string {
   return filename
     .replace(/\.md$/, '')
-    .replace(/_/g, ' ')
-    .replace(/([A-Z])/g, ' $1')
     .trim()
 }
 
