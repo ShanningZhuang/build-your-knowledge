@@ -61,11 +61,12 @@ npm install
 
 ### 2. Start building with AI
 
-Open in Claude Code or Cursor, then ask AI to help you learn:
+Open in Claude Code or Cursor. See [PROMPT.md](PROMPT.md) for ready-to-use prompts:
 
 ```
 "Help me learn [topic]. Create a structured knowledge base
-starting from the fundamentals, building up to advanced concepts."
+starting from the fundamentals, building up to advanced concepts.
+Follow the naming conventions in PROMPT.md."
 ```
 
 ### 3. Run locally
@@ -110,21 +111,29 @@ Complex LaTeX with `{{...}}` also works (Vue conflict resolved).
 
 ---
 
-## File Structure
+## File Structure & Naming Convention
 
 ```
 your-knowledge-base/
-├── topic1/
-│   ├── basics.md
-│   └── advanced/
-│       └── deep-dive.md
-├── topic2/
-│   └── notes.md
-├── index.md              # Homepage
+├── topic_a/
+│   ├── 00_Topic_A.md        # Index file for the folder
+│   ├── 01_Fundamentals.md   # Numbered for reading order
+│   ├── 02_Core_Concepts.md
+│   └── 03_Advanced.md
+├── topic_b/
+│   ├── 00_Topic_B.md
+│   └── 01_Basics.md
+├── index.md                 # Homepage
 └── .vitepress/
-    ├── config.ts         # Configuration
-    └── utils/            # Auto-sidebar & math support
+    ├── config.ts            # Configuration
+    └── utils/               # Auto-sidebar & math support
 ```
+
+**Naming Rules:**
+- Folders: `lowercase_with_underscores/` (not numbered)
+- Files: `XX_Topic_Name.md` (XX = 00, 01, 02...)
+- Index: `00_*.md` is always the folder overview
+- Acronyms: Keep uppercase (`KV_Cache`, `GPU`)
 
 Just add markdown files - the sidebar updates automatically!
 
@@ -136,15 +145,19 @@ Here's how I used this template to learn AI Infra:
 
 ```
 AI_Infra/
-├── AI_Infra.md           # Overview & learning roadmap
+├── 00_AI_Infra.md              # Root index
 ├── basic/
-│   └── Flash_Attention.md
+│   ├── 00_Basic.md             # Folder index
+│   ├── 01_GPU_Fundamentals.md
+│   └── 02_Flash_Attention.md
 ├── inference/
+│   ├── 00_Inference.md
 │   ├── 01_KV_Cache.md
 │   ├── 02_Batching.md
 │   └── 03_Speculative_Decoding.md
 └── rl/
-    ├── 01_Algorithms.md   # PPO, DPO, GRPO...
+    ├── 00_RL.md
+    ├── 01_Algorithms.md        # PPO, DPO, GRPO...
     └── 02_Infrastructure.md
 ```
 
