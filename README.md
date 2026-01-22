@@ -6,18 +6,18 @@
 
 In the AI era, everyone can learn with AI. But simply chatting with AI has problems:
 
-- **Duplication** - AI repeats similar answers across conversations
-- **Hallucination** - Long contexts lead to inaccurate responses
-- **Fragmented knowledge** - Chat history doesn't help you learn systematically
+- ❌ **Duplication** - AI repeats similar answers across conversations
+- ❌ **Hallucination** - Long contexts lead to inaccurate responses
+- ❌ **Fragmented knowledge** - Chat history doesn't help you learn systematically
 
 ### The Solution: Build a Knowledge Base with AI
 
 Using Claude Code (or Cursor) to construct your own knowledge base:
 
-✅ **100% customized** to your background
-✅ **Systematically organized** - not scattered chat logs
-✅ **Expandable** - grow from your existing knowledge
-✅ **Shareable** - publish as a beautiful website
+- ✅ **100% customized** to your background
+- ✅ **Systematically organized** - not scattered chat logs
+- ✅ **Expandable** - grow from your existing knowledge
+- ✅ **Shareable** - publish as a beautiful website
 
 ### The Best Way to Learn
 
