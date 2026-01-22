@@ -64,17 +64,6 @@ $$
 \mathcal{L} = -\sum_{i=1}^{n} y_i \log(\hat{y}_i)
 $$
 
-## Complex Expressions
-
-This template handles complex LaTeX with `{{...}}`:
-
-$$
-\begin{array}{c}
-{{X_0 \sim p_{\text{init}}}} \\
-{{\Rightarrow X_t \sim p_t}}
-\end{array}
-$$
-
 ## Aligned Equations
 
 $$

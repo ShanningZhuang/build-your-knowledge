@@ -30,13 +30,14 @@ export function escapeLaTeXForVue(md: MarkdownIt) {
     })
 
     // Pattern to match display math: \[ ... \]
-    escapedSrc = escapedSrc.replace(/\\\[(.*?)\\\]/gs, (match, content) => {
+    escapedSrc = escapedSrc.replace(/\\\[([\s\S]*?)\\\]/g, (match, content) => {
       const escaped = escapeVueTemplateInMath(content)
       return `\\[${escaped}\\]`
     })
 
-    // Pattern to match $$ ... $$ (if used)
-    escapedSrc = escapedSrc.replace(/\$\$(.*?)\$\$/gs, (match, content) => {
+    // Pattern to match $$ ... $$ (multiline display math)
+    // Use [\s\S] instead of . to match newlines, even though /s flag is present
+    escapedSrc = escapedSrc.replace(/\$\$([\s\S]*?)\$\$/g, (match, content) => {
       const escaped = escapeVueTemplateInMath(content)
       return `$$${escaped}$$`
     })

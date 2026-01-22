@@ -30,7 +30,7 @@ export default defineConfig({
   // Ignore dead links
   ignoreDeadLinks: true,
 
-  srcExclude: ['**/template/**'],
+  srcExclude: ['**/template/**', 'README.md'],
 
   themeConfig: {
     // Navigation bar
