@@ -2,16 +2,16 @@
 layout: home
 
 hero:
-  name: "My Knowledge Base"
-  text: "Personal Notes & Documentation"
-  tagline: Powered by VitePress with auto-sidebar and full math support
+  name: "Build Your Knowledge"
+  text: "Learn Systematically with AI"
+  tagline: Build your own knowledge base with Claude Code or Cursor
   actions:
     - theme: brand
       text: Get Started
       link: /example/getting-started
     - theme: alt
       text: View on GitHub
-      link: https://github.com
+      link: https://github.com/ShanningZhuang/build-your-knowledge
 
 features:
   - icon: 📝
@@ -28,23 +28,13 @@ features:
     details: Local search included out of the box
 ---
 
+## Knowledge Topics
+
+<FolderCards />
+
 ## Quick Start
 
 1. Clone this template
-2. Add your markdown files
+2. Add your markdown files in folders
 3. Run `npm run docs:dev`
 4. Deploy to Vercel!
-
-## Math Examples
-
-Inline math: $E = mc^2$ and \(\alpha + \beta = \gamma\)
-
-Display math:
-
-$$
-\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
-$$
-
-\[
-\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}
-\]
