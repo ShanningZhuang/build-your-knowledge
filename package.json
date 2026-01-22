@@ -1,0 +1,17 @@
+{
+  "name": "build-your-knowledge",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "VitePress knowledge base template with auto-sidebar and math support",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "katex": "^0.16.9",
+    "markdown-it-texmath": "^1.0.0",
+    "vitepress": "^1.6.4"
+  }
+}

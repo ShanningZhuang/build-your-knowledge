@@ -1,0 +1,36 @@
+/* Custom styles for math rendering */
+
+/* Inline math styling */
+.katex {
+  font-size: 1.05em;
+}
+
+/* Inline math should not break lines awkwardly */
+.katex-display {
+  margin: 1em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Fix inline math vertical alignment */
+.katex-html {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Make sure inline equations don't have extra spacing */
+p .katex {
+  margin: 0 0.1em;
+}
+
+/* Display math centering */
+.katex-display > .katex {
+  display: block;
+  text-align: center;
+}
+
+/* Scrollable for very long equations */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
