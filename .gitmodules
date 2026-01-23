@@ -1,3 +1,4 @@
 [submodule "AI_Infra"]
 	path = AI_Infra
 	url = https://github.com/ShanningZhuang/AI-Infra.git
+	branch = main
