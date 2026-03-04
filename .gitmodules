@@ -2,3 +2,6 @@
 	path = AI_Infra
 	url = https://github.com/ShanningZhuang/AI-Infra.git
 	branch = main
+[submodule "LLM"]
+	path = LLM
+	url = https://github.com/ShanningZhuang/LLM.git
