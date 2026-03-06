@@ -5,3 +5,7 @@
 [submodule "LLM"]
 	path = LLM
 	url = https://github.com/ShanningZhuang/LLM.git
+[submodule "Multimodal"]
+	path = Multimodal
+	url = https://github.com/ShanningZhuang/Multimodal.git
+	branch = main
